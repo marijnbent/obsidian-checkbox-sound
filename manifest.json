@@ -1,6 +1,6 @@
 {
 	"id": "obsidian-checkbox-sound",
-	"name": "My Plugin",
+	"name": "Checkbox Sound",
 	"version": "0.1.0",
 	"minAppVersion": "1.6.0",
 	"description": "Make a sound when you tick off a checkbox!",
