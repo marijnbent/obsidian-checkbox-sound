@@ -1,10 +1,10 @@
 import { App, PluginSettingTab, Setting } from 'obsidian';
-import MyPlugin from './main';
+import CheckboxSound from './main';
 
-export class MyPluginSettingTab extends PluginSettingTab {
-    plugin: MyPlugin;
+export class CheckboxSoundSettingTab extends PluginSettingTab {
+    plugin: CheckboxSound;
 
-    constructor(app: App, plugin: MyPlugin) {
+    constructor(app: App, plugin: CheckboxSound) {
         super(app, plugin);
         this.plugin = plugin;
     }
@@ -14,7 +14,7 @@ export class MyPluginSettingTab extends PluginSettingTab {
 
         containerEl.empty();
 
-        new Setting(containerEl).setName('MyPlugin').setHeading();
+        new Setting(containerEl).setName('Checkbox Sound').setHeading();
 
         new Setting(containerEl)
             .setName('Bool Setting')

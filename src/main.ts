@@ -1,14 +1,14 @@
 import { Plugin } from 'obsidian';
-import { MyPluginSettingTab } from './settings';
-import { MyPluginSettings, DEFAULT_SETTINGS } from './types';
+import { CheckboxSoundSettingTab } from './settings';
+import { CheckboxSoundSettings, DEFAULT_SETTINGS } from './types';
 
-export default class MyPlugin extends Plugin {
-    settings: MyPluginSettings;
+export default class CheckboxSound extends Plugin {
+    settings: CheckboxSoundSettings;
 
     async onload() {
 
         this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
-        this.addSettingTab(new MyPluginSettingTab(this.app, this));
+        this.addSettingTab(new CheckboxSoundSettingTab(this.app, this));
         
         // this.addCommand({
         //     id: '',

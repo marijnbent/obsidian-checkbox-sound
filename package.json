@@ -1,7 +1,7 @@
 {
-	"name": "obsidian-my-plugin",
+	"name": "obsidian-checkbox-sound",
 	"version": "0.1.0",
-	"description": "",
+	"description": "Make a sound when you tick off a checkbox!",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",
@@ -10,9 +10,11 @@
 	},
 	"keywords": [
 		"obsidian",
-		"plugin"
+		"plugin",
+		"checkbox",
+		"todo"
 	],
-	"author": "",
+	"author": "Marijn Bent",
 	"license": "MIT",
 	"devDependencies": {
 		"@types/node": "^16.11.6",
